@@ -4,13 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generar-reporte": "allure generate allure-results -o allure-report --clean"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@shelex/cypress-allure-plugin": "^2.40.2",
-    "cypress": "^14.0.1"
+    "chai": "^5.1.2",
+    "cypress": "^14.0.2"
+  },
+  "dependencies": {
+    "@mmisty/cypress-allure-adapter": "^3.2.3",
+    "allure-commandline": "^2.32.2"
   }
 }
